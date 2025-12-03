@@ -68,7 +68,7 @@ sudo ip link set up vcan1
 
 ---
 
-### 🔥 Demo A: Running the Attack
+###  Demo A: Running the Attack
 **Goal:** Demonstrate how a hacker controls the dashboard via HTTP requests.
 
 1.  **Start the Dashboard** (Listening on `vcan0`):
