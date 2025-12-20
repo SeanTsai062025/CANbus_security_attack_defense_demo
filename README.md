@@ -34,10 +34,10 @@ The Guardian monitors `vcan0`, filters out forged packets from the hacker, and f
 
 | File Name | Role | Description |
 | :--- | :--- | :--- |
-| **`main.py`** | 🕷️ Attacker | **The Hacked Gateway**. Runs a FastAPI server that receives remote HTTP commands and sends malicious, unsigned CAN frames. |
-| **`sensor.py`** | 👴 Legacy Sensor | **Standard Sensor**. Simulates normal speed signals. Vulnerable to race conditions when the attacker is active. |
-| **`sensor_secure.py`** | 🛡️ Secure Sensor | **Secure Sensor**. Sends encrypted packets containing `HMAC` signatures and `Counters` instead of raw plaintext data. |
-| **`guardian.py`** | 👮 Guardian | **Security Gateway/Firewall**. Bridges `vcan0` and `vcan1`. Verifies signatures, blocks attacks, and protects the dashboard. |
+| **`main.py`** | Attacker | **The Hacked Gateway**. Runs a FastAPI server that receives remote HTTP commands and sends malicious, unsigned CAN frames. |
+| **`sensor.py`** | Legacy Sensor | **Standard Sensor**. Simulates normal speed signals. Vulnerable to race conditions when the attacker is active. |
+| **`sensor_secure.py`** | Secure Sensor | **Secure Sensor**. Sends encrypted packets containing `HMAC` signatures and `Counters` instead of raw plaintext data. |
+| **`guardian.py`** | Guardian | **Security Gateway/Firewall**. Bridges `vcan0` and `vcan1`. Verifies signatures, blocks attacks, and protects the dashboard. |
 
 ---
 
